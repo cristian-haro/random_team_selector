@@ -2,16 +2,30 @@
 
 ## Descripción General
 
-Este proyecto consiste en un script de Python que realiza un sorteo aleatorio de equipos de fútbol a partir de un archivo Excel. El sistema filtra los equipos marcados como elegibles y selecciona uno al azar para ser el ganador.
+Este proyecto consiste en una herramienta para realizar un sorteo aleatorio de equipos de fútbol a partir de un archivo Excel. El sistema filtra los equipos marcados como elegibles y selecciona uno al azar para ser el ganador.
+
+**Disponible en dos versiones:**
+- **Versión Python**: Script ejecutable con Python 
+- **Versión Ejecutable**: Aplicación .exe lista para usar (sin dependencias)
 
 ## Estructura del Proyecto
 
+### Versión Python
 ```
 random_team_selector/
 │
 ├── equipos.xlsx         # Archivo Excel con la base de datos de equipos
-├── app.py    # Script principal del sorteo
+├── app.py               # Script principal del sorteo (Python)
 ├── requirements.txt     # Dependencias del proyecto
+└── README.md           # Esta documentación
+```
+
+### Versión Ejecutable
+```
+random_team_selector/
+│
+├── app.exe   # Aplicación ejecutable principal (Windows)
+├── equipos.xlsx        # Archivo Excel con la base de datos de equipos
 └── README.md           # Esta documentación
 ```
 
@@ -40,6 +54,59 @@ El archivo Excel contiene las siguientes columnas:
 - `x` o `X` → Equipo elegible para el sorteo
 - `si` o `sí` (en mayúsculas/minúsculas) → También válido
 - **Cualquier otro valor o vacío** → Equipo **no elegible**
+
+---
+
+# 🚀 VERSIÓN EJECUTABLE (.exe)
+
+### Características
+- **No requiere instalación de Python**
+- **No necesita dependencias adicionales**
+- **Ejecución con doble clic**
+- **Compatible con Windows 10/11**
+- **Todo funciona localmente, sin internet**
+
+### Instalación Rápida
+
+1. **Descarga** la carpeta exe:
+
+2. **Configura tu Excel**:
+   - Abre `equipos.xlsx`
+   - Marca con `x` los equipos elegibles
+   - Guarda los cambios
+
+3. **Ejecuta** haciendo doble clic en `app.exe`
+
+### ⚠️ Nota de Seguridad (Windows)
+
+Es normal que Windows Defender muestre una advertencia. Esto ocurre con aplicaciones Python compiladas. Para ejecutarlo:
+
+1. Haz clic en "Más información"
+2. Selecciona "Ejecutar de todas formas"
+3. La aplicación es 100% segura y no contiene malware
+
+### Uso del Ejecutable
+
+1. **Prepara tu Excel** con los equipos elegibles marcados con `x`
+2. **Ejecuta** `app.exe`
+3. **Verás el resultado** inmediatamente:
+
+```
+==============================
+🎲 RESULTADO DEL SORTEO 🎲
+==============================
+🏆 EQUIPO:  Atlético
+🌍 LIGA:    La Liga
+==============================
+
+Presiona Enter para salir...
+```
+
+4. **Presiona Enter** para cerrar la ventana
+
+---
+
+# VERSIÓN PYTHON
 
 ## Script Principal: `app.py`
 
@@ -93,17 +160,70 @@ El archivo Excel contiene las siguientes columnas:
 ==============================
 🎲 RESULTADO DEL SORTEO 🎲
 ==============================
-🏆 EQUIPO:  Barcelona
+🏆 EQUIPO:  Atlético
 🌍 LIGA:    La Liga
 ==============================
 ```
 
-## Licencia
+---
 
-Este proyecto está creado para uso educativo y personal. Puedes modificarlo y distribuirlo libremente.
+# Solución de Problemas
 
-## Contribuciones
+## Problemas Comunes
 
-Las sugerencias y mejoras son bienvenidas. 
+| Problema | Solución |
+|----------|----------|
+| **"Windows protegido tu PC"** | Haz clic en "Más información" → "Ejecutar de todas formas" |
+| **"equipos.xlsx no encontrado"** | Asegúrate de que el Excel esté en la misma carpeta |
+| **"No hay equipos elegibles"** | Marca con `x` al menos un equipo en el Excel |
+| **Error al abrir Excel** | Cierra Excel antes de ejecutar el programa |
+| **Resultado siempre igual** | Verifica que tengas múltiples equipos marcados con `x` |
+
+## Para la Versión Python
+
+Si `app.py` no funciona:
+1. Verifica que Python esté instalado: `python --version`
+2. Instala las dependencias: `pip install pandas openpyxl`
+3. Asegúrate de estar en la carpeta correcta
 
 ---
+
+# Personalización
+
+## Modificar la Lista de Equipos
+
+1. Abre `equipos.xlsx`
+2. Edita, añade o elimina equipos
+3. Marca con `x` los que quieras que sean elegibles
+4. Guarda los cambios
+
+## Usar para Otros Propósitos
+
+La herramienta es flexible y puede usarse para:
+- Sorteos de regalos
+- Selección aleatoria de participantes
+- Asignación de equipos en juegos
+- Cualquier lista que necesite selección aleatoria
+
+Solo mantén la estructura de columnas:
+- **Pais/Liga**: Categorías (pueden ser cualquier cosa)
+- **Equipo**: Elementos a sortear
+- **Elegible**: Qué elementos están disponibles
+
+---
+
+# Soporte y Contribuciones
+
+## Reportar Problemas
+1. Verifica que sigas los pasos correctamente
+2. Asegúrate de tener los archivos en la misma carpeta
+3. Si el problema persiste, contáctame
+
+## Sugerencias de Mejora
+Las contribuciones son bienvenidas.
+
+---
+
+**Versión**: 1.1.0  
+**Última actualización**: Diciembre 2025  
+**Compatibilidad**: Windows 10/11, Python 3.7+
