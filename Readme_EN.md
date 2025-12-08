@@ -70,6 +70,10 @@ The Excel file contains the following columns:
 
 1. **Download** the exe folder
 
+![Step 1.](https://raw.githubusercontent.com/cristian-haro/random_team_selector/refs/heads/main/img/Readme_1.png "Step 1")
+
+![Step 2](https://raw.githubusercontent.com/cristian-haro/random_team_selector/refs/heads/main/img/Readme_2.png "Step 2")
+
 2. **Configure your Excel**:
    - Open `equipos.xlsx`
    - Mark eligible teams with `x`

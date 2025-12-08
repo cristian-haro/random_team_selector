@@ -70,6 +70,10 @@ El archivo Excel contiene las siguientes columnas:
 
 1. **Descarga** la carpeta exe:
 
+![Step 1.](https://raw.githubusercontent.com/cristian-haro/random_team_selector/refs/heads/main/img/Readme_1.png "Step 1")
+
+![Step 2](https://raw.githubusercontent.com/cristian-haro/random_team_selector/refs/heads/main/img/Readme_2.png "Step 2")
+
 2. **Configura tu Excel**:
    - Abre `equipos.xlsx`
    - Marca con `x` los equipos elegibles
