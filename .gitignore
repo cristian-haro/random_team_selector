@@ -1,0 +1,33 @@
+# Dependencias de Node.js
+node_modules/
+
+# Variables de entorno
+.env
+.env.local
+
+# Logs
+*.log
+logs/
+
+# Archivos del sistema
+.DS_Store
+Thumbs.db
+
+# IDE/Editores
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Build/compilación
+dist/
+build/
+*.exe
+*.dll
+
+# Sistema operativo
+__pycache__/
+*.pyc
+
+
+dev/
